@@ -10,6 +10,18 @@ body {
   font-weight: 300;
 }
 
+.footy {
+  height: 2%;
+  background-color: rgba(0, 0, 0, 0.5);;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.footy p {
+  margin: 0;
+}
+
 .l-site {
   min-height: 100%;
   margin: 0 auto;
@@ -274,19 +286,19 @@ iframe {
 }
 
 #hu {
-  background-image: url(images/hu-small.png);
+  background-image: url("../images/hu-small.png");
 }
 
 #aea {
-  background-image: url(images/aea-small.png);
+  background-image: url("../images/aea-small.png");
 }
 
 #gp {
-  background-image: url(images/au-small.png);
+  background-image: url("../images/au-small.png");
 }
 
 #av {
-  background-image: url(images/av-small.png);
+  background-image: url("../images/av-small.png");
 }
 
 .box-leistung-txt {
