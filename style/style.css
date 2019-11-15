@@ -10,11 +10,18 @@ body {
   font-weight: 300;
 }
 
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
 .footy {
-  height: 2%;
+  height: 4%;
   background-color: rgba(0, 0, 0, 0.5);;
   margin: 0;
-  padding: 0;
+  padding: 5px 0 2px 0;
   text-align: center;
 }
 
@@ -49,6 +56,7 @@ body {
   -webkit-transition: 0.35s;
   -moz-transition: 0.35s;
   transition: 0.35s;
+  width: 100%;
 }
 
 .l-nav {
@@ -321,7 +329,7 @@ iframe {
   padding-left: 2%;
 }
 
-@media screen and (max-width: 2160px) {
+@media screen {
   .menu {
     display: block;
   }
@@ -346,16 +354,31 @@ iframe {
     z-index: 2;
   }
 
-  .band-container {
-    padding: 0 1.5em;
-  }
 }
 
-@media (max-width: 400px){ /* AND if screen width is lower then 720px*/
+
+@media (max-width: 400px){ /* AND if screen width is lower then 400px*/
+
+  .band-container {
+    left: 0;
+    right: 0;
+    margin: 0 20%;
+    min-height: 100vh;
+    max-width: 960px;
+    display: table;
+    position: relative;
+    padding: 0 0;
+  }
+
+  .band-inner {
+    display: table-cell;
+    vertical-align: middle;
+    padding: 0;
+  }
 
   .box-leistung {
     height: 215px;
-    width: 322px;
+    width: 222px;
     background-color: #3a4043;
     margin: 15% 5% 0 0;
     flex-grow: 0;
