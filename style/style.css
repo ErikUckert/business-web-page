@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:300,500&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Roboto:500&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,500&display=swap');
 html,
 body {
   width: 100%;
@@ -92,7 +92,7 @@ html {
     height: 3px;
     background: white;
     border: 0;
-    margin: 10px auto 40px 0;
+    margin: 5% auto 5% 0;
 }
 
 .band-container {
@@ -104,6 +104,11 @@ html {
   display: table;
   position: relative;
   padding: 0 3em;
+}
+
+#landing-page-logo {
+  width: 128px;
+  margin-bottom: 5%;
 }
 
 #arrow img{
@@ -208,8 +213,8 @@ iframe {
   position: fixed;
   top: 25px;
   left: 1.5em;
-  width: 48px;
-  height: 48px;
+  width: 32px;
+  height: 32px;
   cursor: pointer;
   z-index: 10;
 }
@@ -217,8 +222,8 @@ iframe {
 #nav-burger {
   position: fixed;
   left: 11em;
-  width: 48px;
-  height: 48px;
+  width: 32px;
+  height: 32px;
   cursor: pointer;
   z-index: 10;
 }
@@ -232,7 +237,7 @@ iframe {
 .menu.is-active .menu-hamburger:before,
 .menu.is-active .menu-hamburger:after {
   top: 0;
-  width: 48px;
+  width: 32px;
   -webkit-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
@@ -250,7 +255,7 @@ iframe {
 
 .menu-hamburger {
   position: fixed;
-  width: 48px;
+  width: 32px;
   height: 4px;
   margin: 10px 0;
   background: #fff;
@@ -260,7 +265,7 @@ iframe {
 .menu-hamburger:before, .menu-hamburger:after {
   content: '';
   display: block;
-  width: 48px;
+  width: 32px;
   height: 4px;
   background: #fff;
   position: absolute;
@@ -270,11 +275,11 @@ iframe {
 .menu-hamburger:before {
   top: -8px;
   left: 0;
-  width: 48px;
+  width: 32px;
 }
 .menu-hamburger:after {
   top: 8px;
-  width: 32px;
+  width: 16px;
   left: 0;
 }
 
@@ -310,23 +315,20 @@ iframe {
 }
 
 .box-leistung-txt {
-  width: 90%;
-  height: 100px;
+  /* 
   background: rgba(204, 204, 204, 0.9);
+  */
+  background: #fff;
   position: relative;
-  top: 115px;
-  left: 16px;
   text-align: start;
 }
 
 .box-leistung-txt p {
   color: black;
   font-family: 'Roboto', sans-serif;
-  font-size: 20px;
-  font-weight: 500;
-  margin-top: 5%;
-  padding-top: 5%;
-  padding-left: 2%;
+  font-size: 100%;
+  font-weight: 300;
+  padding: 2%;
 }
 
 @media screen {
@@ -356,8 +358,7 @@ iframe {
 
 }
 
-
-@media (max-width: 400px){ /* AND if screen width is lower then 400px*/
+@media (max-width: 500px){ /* AND if screen width is lower then 500px*/
 
   .band-container {
     left: 0;
@@ -387,23 +388,22 @@ iframe {
   }
 
   .box-leistung-txt {
-    width: 90%;
-    height: 100px;
+    width: 100%;
+    top: 0;
+    /*
     background: rgba(204, 204, 204, 0.9);
+    */
+    background: #fff;
     position: relative;
-    top: 115px;
-    left: 11px;
     text-align: start;
   }
 
   .box-leistung-txt p {
     color: black;
     font-family: 'Roboto', sans-serif;
-    font-size: 16px;
-    font-weight: 500;
-    margin-top: 5%;
-    padding-top: 5%;
-    padding-left: 2%;
+    font-size: 100;
+    font-weight: 300;
+    padding: 2%;
   }
 
   .band p {
