@@ -8,6 +8,7 @@ body {
   padding: 0;
   font-family: 'Montserrat', sans-serif;
   font-weight: 300;
+  scroll-behavior: smooth;
 }
 
 html {
@@ -296,6 +297,7 @@ iframe {
   flex-grow: 0;
   flex-shrink: 1;
   flex-basis: 322px;
+  min-width: 322px;
 }
 
 #hu {
@@ -314,21 +316,26 @@ iframe {
   background-image: url("../images/av-small.png");
 }
 
-.box-leistung-txt {
-  /* 
-  background: rgba(204, 204, 204, 0.9);
-  */
-  background: #fff;
-  position: relative;
-  text-align: start;
+.box-leistung p {
+  position: relative; 
+  top: 100px; 
+  left: 0; 
+  width: 100%; 
+}
+.box-leistung p span {
+  color: white; 
+  font-family: 'Roboto', sans-serif;
+  font-size: 70%;
+  font-weight: 300;
+  line-height: 2.4rem; 
+  background: rgb(0, 0, 0); /* fallback color */
+  background: rgba(0, 0, 0, 0.7);
+  padding: 10px; 
 }
 
-.box-leistung-txt p {
-  color: black;
-  font-family: 'Roboto', sans-serif;
-  font-size: 100%;
-  font-weight: 300;
-  padding: 2%;
+.box-leistung p span.spacer {
+  padding:0 5px;
+  background: none;
 }
 
 @media screen {
@@ -358,7 +365,7 @@ iframe {
 
 }
 
-@media (max-width: 500px){ /* AND if screen width is lower then 500px*/
+@media (max-width: 500px){ /* If screen width is lower then 500px*/
 
   .band-container {
     left: 0;
@@ -377,36 +384,40 @@ iframe {
     padding: 0;
   }
 
+  .band p {
+    font-size: 16px;
+  }
+
   .box-leistung {
     height: 215px;
     width: 222px;
     background-color: #3a4043;
-    margin: 15% 5% 0 0;
+    margin: 7.5% 0 0 0;
     flex-grow: 0;
     flex-shrink: 1;
     flex-basis: 222px;
+    min-width: 222px;
   }
 
-  .box-leistung-txt {
-    width: 100%;
-    top: 0;
-    /*
-    background: rgba(204, 204, 204, 0.9);
-    */
-    background: #fff;
-    position: relative;
-    text-align: start;
+  .box-leistung p {
+    position: relative; 
+    top: 100px; 
+    left: 0; 
+    width: 100%; 
   }
-
-  .box-leistung-txt p {
-    color: black;
+  .box-leistung p span {
+    color: white; 
     font-family: 'Roboto', sans-serif;
-    font-size: 100;
+    font-size: 70%;
     font-weight: 300;
-    padding: 2%;
+    line-height: 2.0rem; 
+    background: rgb(0, 0, 0); /* fallback color */
+    background: rgba(0, 0, 0, 0.7);
+    padding: 10px; 
   }
 
-  .band p {
-    font-size: 16px;
-  }
+  .box-leistung p span.spacer {
+    padding:0 5px;
+    background: none;
+ }
 }
