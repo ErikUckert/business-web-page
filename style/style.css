@@ -389,6 +389,7 @@ span.spamschutz {
     display: table-cell;
     vertical-align: middle;
     padding: 3em 0 4em;
+    min-width: 235px;
   }
 
   .band p {
