@@ -88,6 +88,13 @@ html {
   font-size: 24px;
 }
 
+.band li {
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  font-size: 24px;
+}
+
 .band hr {
     width: 30px;
     height: 3px;
@@ -155,11 +162,11 @@ span.spamschutz {
   color: #fff;
 }
 
-iframe {
-  margin: 0 0 10% 0;
-  max-width: 100%;
-  border: none; 
-  margin-top: 10px
+.marked-links {
+  text-decoration: none;
+  padding:0 0 0 0;
+  text-transform: none;
+  color: gray;
 }
 
 .band-inner {
@@ -381,10 +388,14 @@ iframe {
   .band-inner {
     display: table-cell;
     vertical-align: middle;
-    padding: 0;
+    padding: 3em 0 4em;
   }
 
   .band p {
+    font-size: 16px;
+  }
+
+  .band li {
     font-size: 16px;
   }
 
