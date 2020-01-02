@@ -1,7 +1,7 @@
 One Page Version of a small business homepage for an local Engineer
 ---
 
-<img src="images/preview_image.png" size="480" />
+<img src="images/preview_image.PNG" size="480" />
 
 This website is designed and built as contact and portfolio page for a small local business.
 
