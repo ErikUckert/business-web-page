@@ -1,4 +1,4 @@
-One Page Version of a small business homepage for an local Engineer
+This is a small business homepage for a local Engineer
 ---
 
 <img src="images/preview_image.PNG" size="480" />
@@ -8,7 +8,7 @@ This website is designed and built as contact and portfolio page for a small loc
 Access this page
 ---
 
-You can visit this page live at [this adress](http://kues-brb.de) or showcase it locally when you have access to a HTTP Server. This, for example, is done in python via the Simple HTTP Server feature.
+You can visit this page live at [this adress](https://kues-brb.de) or showcase it locally when you have access to a HTTP Server. This, for example, is done in python2x via the Simple HTTP Server feature.
 
 **Step 1** - Change directory to this cloned repository
 
