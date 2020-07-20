@@ -3,7 +3,7 @@ This is a small business homepage for a local Engineer
 
 <img src="images/preview_image.PNG" size="480" />
 
-The website is designed and built as contact and portfolio page for a small local business.
+The website is designed and built as contact and services page for a small local business owner.
 
 Access this page
 ---
