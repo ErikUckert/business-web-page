@@ -11,11 +11,15 @@ body {
   scroll-behavior: smooth;
 }
 
-html {
+* {
   box-sizing: border-box;
 }
-*, *:before, *:after {
-  box-sizing: inherit;
+
+
+/* Center website */
+.main {
+  max-width: 1000px;
+  margin: auto;
 }
 
 .footy {
@@ -106,9 +110,9 @@ html {
 .band-container {
   left: 0;
   right: 0;
-  margin: 0 20%;
+  margin: 0 4%;
   min-height: 100vh;
-  max-width: 960px;
+  max-width: 1080p;
   display: table;
   position: relative;
   padding: 0 3em;
@@ -291,60 +295,6 @@ span.spamschutz {
   left: 0;
 }
 
-.container-leistungen {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.box-leistung {
-  height: 215px;
-  width: 322px;
-  background-color: #3a4043;
-  margin: 5% 5% 0 0;
-  flex-grow: 0;
-  flex-shrink: 1;
-  flex-basis: 322px;
-  min-width: 322px;
-}
-
-#hu {
-  background-image: url("../images/hu-small.png");
-}
-
-#aea {
-  background-image: url("../images/aea-small.png");
-}
-
-#gp {
-  background-image: url("../images/au-small.png");
-}
-
-#av {
-  background-image: url("../images/av-small.png");
-}
-
-.box-leistung p {
-  position: relative; 
-  top: 100px; 
-  left: 0; 
-  width: 100%; 
-}
-.box-leistung p span {
-  color: white; 
-  font-family: 'Roboto', sans-serif;
-  font-size: 70%;
-  font-weight: 300;
-  line-height: 2.4rem; 
-  background: rgb(0, 0, 0); /* fallback color */
-  background: rgba(0, 0, 0, 0.7);
-  padding: 10px; 
-}
-
-.box-leistung p span.spacer {
-  padding:0 5px;
-  background: none;
-}
-
 @media screen {
   .menu {
     display: block;
@@ -377,7 +327,7 @@ span.spamschutz {
   .band-container {
     left: 0;
     right: 0;
-    margin: 0 20%;
+    margin: 0 18% 0 18%;
     min-height: 100vh;
     max-width: 960px;
     display: table;
@@ -400,36 +350,69 @@ span.spamschutz {
     font-size: 16px;
   }
 
-  .box-leistung {
-    height: 215px;
-    width: 222px;
-    background-color: #3a4043;
-    margin: 7.5% 0 0 0;
-    flex-grow: 0;
-    flex-shrink: 1;
-    flex-basis: 222px;
-    min-width: 222px;
-  }
+}
 
-  .box-leistung p {
-    position: relative; 
-    top: 100px; 
-    left: 0; 
-    width: 100%; 
-  }
-  .box-leistung p span {
-    color: white; 
-    font-family: 'Roboto', sans-serif;
-    font-size: 70%;
-    font-weight: 300;
-    line-height: 2.0rem; 
-    background: rgb(0, 0, 0); /* fallback color */
-    background: rgba(0, 0, 0, 0.7);
-    padding: 10px; 
-  }
+/*  #### Leistungen ####  */
 
-  .box-leistung p span.spacer {
-    padding:0 5px;
-    background: none;
- }
+.content h3 {
+  font-size: 20px;
+  word-break: break-word;
+  color: white;
+}
+
+.content p {
+  font-size: 15px;
+  word-break: break-word;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+}
+
+.row {
+  margin: 8px -14px;
+}
+
+/* Add padding BETWEEN each column (if you want) */
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+/* Create four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 25%;
+}
+
+/* Clear floats after rows */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+
+  background: rgba(0, 0, 0, 0.1);
+  padding: 10px;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 900px) {
+  .column {
+    width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+
+.grid-wrapper{
+  display: grid;
+  grid-template-rows: 100px; /* top row is 100px in height */
+  grid-auto-rows: 200px;     /* any new rows created are 200px in height */
 }
