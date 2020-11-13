@@ -343,7 +343,7 @@ span.spamschutz {
   }
 
   .band p {
-    font-size: 16px;
+    font-size: 20px;
   }
 
   .band li {
@@ -408,6 +408,12 @@ span.spamschutz {
 @media screen and (max-width: 600px) {
   .column {
     width: 100%;
+  }
+  .content p {
+    font-size: 20px;
+  }
+  .content h3 {
+    font-size: 25px;
   }
 }
 
