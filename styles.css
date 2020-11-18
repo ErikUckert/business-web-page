@@ -405,6 +405,7 @@ html {
 .w3-container,
 .w3-panel {
     padding: 0.01em 16px;
+    min-height:100vh
 }
 .w3-container:after,
 .w3-container:before,
@@ -503,20 +504,42 @@ html {
 .w3-show {
     display: block !important;
 }
+#header {
+    background-image: url("images/header-bgr.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+#landing-page-text {
+    position: relative;
+    top: 0vh;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 0 16px;
+}
 #landing-page-logo {
     width: 128px;
-    margin-bottom: 5%;
+    position: absolute;
+    top: 25vh;
+    margin-left: -64px;
+    background: rgba(0, 0, 0, 0.4);
+}
+
+/* Animated Arrow on Landing Page*/
+#arrow {
+    position: absolute;
+    bottom: 10vh;
+    left: 50vw;
+    margin-left: -32px;
 }
 #arrow img{
-    margin-top: 10%;
     width: 64px;
-  }
-  
-  .blink{
+}
+.blink{
     animation: blinking-arrow 6s linear infinite;
     -webkit-animation: blinking-arrow 4s linear infinite;
-  }
-  @keyframes blinking-arrow{
+}
+@keyframes blinking-arrow{
     0%{     opacity: 1;}
     5%{     opacity: 0.9;}
     10%{    opacity: 0.8;}
@@ -538,4 +561,38 @@ html {
     90%{    opacity: 0.8;}
     95%{    opacity: 0.9;}
     100%{   opacity: 1;}
+}
+/* Slide in Effect for header text*/
+.slide-in-bottom {
+	-webkit-animation: slide-in-bottom 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: slide-in-bottom 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+.slide-in-bottom-delay {
+	-webkit-animation: slide-in-bottom 5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: slide-in-bottom 5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+ @-webkit-keyframes slide-in-bottom {
+    0% {
+      -webkit-transform: translateY(1000px);
+              transform: translateY(1000px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+      opacity: 1;
+    }
   }
+  @keyframes slide-in-bottom {
+    0% {
+      -webkit-transform: translateY(1000px);
+              transform: translateY(1000px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
