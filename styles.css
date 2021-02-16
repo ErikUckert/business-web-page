@@ -8,7 +8,7 @@ html {
 *:after {
     box-sizing: inherit;
 }
-/* Extract from normalize.css by Nicolas Gallagher and Jonathan Neal git.io/normalize */
+/* ==== Extract from normalize.css by Nicolas Gallagher and Jonathan Neal git.io/normalize */
 html {
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
@@ -186,7 +186,10 @@ textarea {
     -webkit-appearance: button;
     font: inherit;
 }
-/* End extract */
+
+/* ==== End extract from normalize.css */
+
+
 html {
     overflow-x: hidden;
 }
@@ -226,6 +229,7 @@ body {
     font-family: Verdana, sans-serif;
     font-size: 15px;
     line-height: 1.5;
+    width: 100%;
 }
 html {
     overflow-x: hidden;
@@ -340,22 +344,6 @@ html {
     color: #000 !important;
     background-color: #ccc !important;
 }
-@media (max-width: 992px) and (min-width: 601px) {
-    .w3-hide-medium {
-        display: none !important;
-    }
-}
-@media (min-width: 993px) {
-    .w3-modal-content {
-        width: 900px;
-    }
-    .w3-hide-large {
-        display: none !important;
-    }
-    .w3-sidebar.w3-collapse {
-        display: block !important;
-    }
-}
 .w3-wide {
     letter-spacing: 4px;
 }
@@ -369,18 +357,6 @@ html {
 .w3-hover-white:hover {
     color: #000 !important;
     background-color: #fff !important;
-}
-@media (max-width: 600px) {
-    .w3-hide-small {
-        display: none !important;
-    }
-    .w3-mobile {
-        display: block;
-        width: 100% !important;
-    }
-    .w3-bar-item.w3-mobile {
-        text-align: center;
-    }
 }
 .w3-bar-block .w3-dropdown-hover,
 .w3-bar-block .w3-dropdown-click {
@@ -472,20 +448,9 @@ html {
 .w3-twothird-right {
     padding: 0;
     float: right;
-    width: 100%;
+
 }
-@media (min-width: 601px) {
-    .w3-third {
-        width: 33.33333%;
-    }
-    .w3-twothird {
-        width: 66.66666%;
-    }
-    .w3-twothird-right {
-        width: 66.66666%;
-        padding: 0 16px;
-    }
-}
+
 .w3-padding-32 {
     padding-top: 32px !important;
     padding-bottom: 32px !important;
@@ -609,4 +574,55 @@ html {
       opacity: 1;
     }
   }
+
+  /* ==== Behavior on small screens =====
+========= aka the mighty media queries */
+
+/* do this only on screensizes larger then... */
+@media (min-width: 601px) {
+    .w3-third {
+        width: 33.33333%;
+    }
+    .w3-twothird {
+        width: 50%;
+    }
+    .w3-twothird-right {
+        width: 50%;
+        padding: 0 20px;
+    }
+}
+
+/* do this only on screensizes between... */
+@media (max-width: 992px) and (min-width: 601px) {
+    .w3-hide-medium {
+        display: none !important;
+    }
+}
+
+/* do this only on screensizes larger then... */
+@media (min-width: 993px) {
+    .w3-modal-content {
+        width: 900px;
+    }
+    .w3-hide-large {
+        display: none !important;
+    }
+    .w3-sidebar.w3-collapse {
+        display: block !important;
+    }
+}
+
+/* do this only on screensizes smaller then... */
+@media (max-width: 600px) {
+    .w3-hide-small {
+        display: none !important;
+    }
+    .w3-mobile {
+        display: block;
+        width: 100% !important;
+    }
+    .w3-bar-item.w3-mobile {
+        text-align: center;
+    }
+}
   
