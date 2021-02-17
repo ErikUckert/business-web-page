@@ -93,6 +93,7 @@ figure {
 }
 img {
     border-style: none;
+    width: 100%;
 }
 code,
 kbd,
@@ -200,7 +201,7 @@ textarea {
 
 /* ==== End extract from normalize.css */
 
-
+/* ==== General Page Styles ==== */
 html {
     overflow-x: hidden;
 }
@@ -245,6 +246,9 @@ body {
 html {
     overflow-x: hidden;
 }
+
+/* ==== w3 classes ==== */
+
 .w3-top,
 .w3-bottom {
     position: fixed;
@@ -461,7 +465,6 @@ html {
     float: right;
 
 }
-
 .w3-padding-32 {
     padding-top: 32px !important;
     padding-bottom: 32px !important;
@@ -494,6 +497,8 @@ html {
 .w3-show {
     display: block !important;
 }
+
+/* ==== Landing Page Styling ==== */
 #header {
     background-image: url("images/header-bgr.png");
     background-repeat: no-repeat;
@@ -515,7 +520,8 @@ html {
     background: rgba(0, 0, 0, 0.4);
 }
 
-/* Animated Arrow on Landing Page*/
+/* ==== Arrow on Landing Page =============
+======= with blink animation, super nice */
 #arrow {
     position: absolute;
     bottom: 10vh;
@@ -552,7 +558,8 @@ html {
     95%{    opacity: 0.9;}
     100%{   opacity: 1;}
 }
-/* Slide in Effect for header text*/
+
+/* ==== Slide in Effect for header text ==== */
 .slide-in-bottom {
 	-webkit-animation: slide-in-bottom 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 	        animation: slide-in-bottom 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
@@ -590,15 +597,15 @@ html {
 ========= aka the mighty media queries */
 
 /* do this only on screensizes larger then... */
-@media (min-width: 601px) {
+@media (min-width: 901px) {
     .w3-third {
         width: 33.33333%;
     }
     .w3-twothird {
-        width: 50%;
+        width: 66.6%;
     }
     .w3-twothird-right {
-        width: 50%;
+        width: 66.6%;
         padding: 0 20px;
     }
 }
