@@ -508,7 +508,7 @@ html {
 }
 #landing-page-text {
     position: relative;
-    top: 0vh;
+    bottom: 10vh;
     background: rgba(0, 0, 0, 0.5);
     padding: 0 16px;
 }
