@@ -114,6 +114,17 @@ hr {
     background: white;
     border: 0;
 }
+
+/* Gradient hr */
+
+.gradient-hr {
+    border: 0;
+    height: 1px;
+    width: 60%;
+    background: #333;
+    background-image: linear-gradient(to right, #ccc, #333, #ccc);
+}
+
 button,
 input,
 select,
