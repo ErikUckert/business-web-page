@@ -396,6 +396,11 @@ a {
 	color: #757575!important
 }
 
+.w3-hover-text-dark-grey:hover,
+.w3-text-dark-grey {
+	color: #AAAAAA!important
+}
+
 .w3-hover-text-red:hover,
 .w3-text-red {
 	color: #f44336!important
@@ -409,7 +414,7 @@ a {
 
 .w3-dark-grey {
 	color: #000!important;
-	background-color: #AAAAAA
+	background-color: #AAAAAA!important;
 }
 
 .w3-margin-right {
@@ -540,6 +545,23 @@ a {
 	-webkit-animation: slide-in-bottom 5s cubic-bezier(.25, .46, .45, .94) both;
 	animation: slide-in-bottom 5s cubic-bezier(.25, .46, .45, .94) both
 }
+
+span.spamschutz {
+	display:none;
+  }
+
+  .contact-links {
+	text-decoration: none;
+	padding:0 0 0 0;
+	text-transform: none;
+  }
+
+  .marked-links {
+	text-decoration: none;
+	padding:0 0 0 0;
+	text-transform: none;
+	color: black;
+  }
 
 @-webkit-keyframes slide-in-bottom {
 	0% {

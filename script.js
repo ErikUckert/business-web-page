@@ -1,3 +1,8 @@
+// get dom elements
+var divContact = document.getElementById("hideContact");
+var divImprint = document.getElementById("hideImprint");
+var divData = document.getElementById("hideData");
+
 // Used to toggle the menu on small screens when clicking on the menu button
 function hideNav() {
     var x = document.getElementById("navDemo");
@@ -8,12 +13,12 @@ function hideNav() {
     }
   }
 
+  // functions for toggle info sections
   function hideContact() {
-    var x = document.getElementById("hideContact");
-    if (x.style.display === "none") {
-      x.style.display = "block";
+    if (divContact.style.display === "none") {
+      divContact.style.display = "block";
     } else {
-      x.style.display = "none";
+      divContact.style.display = "none";
     }
   }
 
@@ -21,6 +26,7 @@ function hideNav() {
     var x = document.getElementById("hideImprint");
     if (x.style.display === "none") {
       x.style.display = "block";
+      document.getElementById("hideContact").style.display = "none"
     } else {
       x.style.display = "none";
     }
