@@ -1,7 +1,7 @@
 // get dom elements
-var divContact = document.getElementById("hideContact");
-var divImprint = document.getElementById("hideImprint");
-var divData = document.getElementById("hideData");
+const divContact = document.getElementById("contact");
+const divImprint = document.getElementById("imprint");
+const divData = document.getElementById("data");
 
 // Used to toggle the menu on small screens when clicking on the menu button
 function hideNav() {
@@ -17,17 +17,29 @@ function hideNav() {
   function hideContact() {
     if (divContact.style.display === "none") {
       divContact.style.display = "block";
+      divImprint.style.display = "none";
+      divData.style.display = "none";
     } else {
       divContact.style.display = "none";
     }
   }
 
   function hideImprint() {
-    var x = document.getElementById("hideImprint");
-    if (x.style.display === "none") {
-      x.style.display = "block";
-      document.getElementById("hideContact").style.display = "none"
+    if (divImprint.style.display === "none") {
+      divImprint.style.display = "block";
+      divContact.style.display = "none";
+      divData.style.display = "none";
     } else {
-      x.style.display = "none";
+      divImprint.style.display = "none";
+    }
+  }
+
+  function hideData() {
+    if (divData.style.display === "none") {
+      divData.style.display = "block";
+      divImprint.style.display = "none";
+      divContact.style.display = "none";
+    } else {
+      divData.style.display = "none";
     }
   }
