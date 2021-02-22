@@ -643,4 +643,12 @@ span.spamschutz {
 	.w3-hide-small {
 		display: none!important
 	}
+	.logo {
+		font-size: 0.8rem;
+		letter-spacing: 1.5px;
+		margin: 10px;
+	}
+	.credits {
+		font-size: 0.6rem;
+	}
 }
