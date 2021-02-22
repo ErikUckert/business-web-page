@@ -72,6 +72,22 @@ hr {
 	background-image: linear-gradient(to right, #ccc, #333, #ccc)
 }
 
+.logo{
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 2px;
+	margin: 10px;
+}
+
+.logo span{
+    font-weight: 300;
+}
+
+.credits {
+	font-size: 0.8rem;
+}
+
 .btn {
 	background-color: #c8102e!important;
 	border: none;
