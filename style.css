@@ -585,7 +585,7 @@ span.spamschutz {
 	text-decoration: none;
 	padding:0 0 0 0;
 	text-transform: none;
-	color: black;
+	color: gray;
   }
 
 @-webkit-keyframes slide-in-bottom {
