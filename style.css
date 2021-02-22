@@ -92,6 +92,14 @@ background-color: #a50e27!important;
 	margin-right: 10px;
 }
 
+.fa-database {
+	margin-right: 10px;
+}
+
+.fa-book {
+	margin-right: 10px;
+}
+
 button {
 	font: inherit;
 	margin: 0
@@ -194,7 +202,8 @@ a {
 .w3-top {
 	position: fixed;
 	width: 100%;
-	z-index: 1
+	z-index: 1;
+	transition: top 0.5s;
 }
 
 .w3-top {

@@ -1,4 +1,5 @@
 // get dom elements
+const divNavBar = document.getElementById("navbar");
 const divNav = document.getElementById("nav");
 const divContact = document.getElementById("contact");
 const divImprint = document.getElementById("imprint");
@@ -43,3 +44,15 @@ function hideNav() {
       divData.style.display = "none";
     }
   }
+
+  /* When the user scrolls down, hide the navbar. When the user scrolls up, show the navbar */
+var prevScrollpos = window.pageYOffset;
+window.onscroll = function() {
+  var currentScrollPos = window.pageYOffset;
+  if (prevScrollpos > currentScrollPos) {
+    divNavBar.style.top = "0";
+  } else {
+    divNavBar.style.top = "-160px";
+  }
+  prevScrollpos = currentScrollPos;
+}
