@@ -1,15 +1,15 @@
 // get dom elements
+const divNav = document.getElementById("nav");
 const divContact = document.getElementById("contact");
 const divImprint = document.getElementById("imprint");
 const divData = document.getElementById("data");
 
 // Used to toggle the menu on small screens when clicking on the menu button
 function hideNav() {
-    var x = document.getElementById("navDemo");
-    if (x.className.indexOf("w3-show") == -1) {
-      x.className += " w3-show";
+    if (divNav.className.indexOf("w3-show") == -1) {
+      divNav.className += " w3-show";
     } else { 
-      x.className = x.className.replace(" w3-show", "");
+      divNav.className = divNav.className.replace(" w3-show", "");
     }
   }
 
