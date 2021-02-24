@@ -104,17 +104,14 @@ hr {
 background-color: #a50e27!important;
 }
 
-.fa-coffee {
+.fa-envelope,
+.fa-balance-scale-right,
+.fa-feather-alt{
 	margin-right: 10px;
 }
 
-.fa-database {
-	margin-right: 10px;
-}
 
-.fa-book {
-	margin-right: 10px;
-}
+
 
 button {
 	font: inherit;
@@ -467,16 +464,8 @@ a {
 #landing-page-text {
 	position: relative;
 	bottom: 10vh;
-	background: rgba(0, 0, 0, .5);
+	background: #c8102e;
 	padding: 0 16px
-}
-
-#landing-page-logo {
-	width: 128px;
-	position: absolute;
-	top: 25vh;
-	margin-left: -64px;
-	background: rgba(0, 0, 0, .4)
 }
 
 #arrow {
