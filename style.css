@@ -587,11 +587,14 @@ span.spamschutz {
 		width: 280px;
 		display: inline-block;
 		text-align: left;
-		align-items: flex-start;
+		align-items: flex-end;
 	  }
 	
 	.info-button i {
 		width: 2rem;
-		margin: 0 1rem;
+		margin: 0 1.5rem;
+	}
+	.info-button span {
+		margin: 0 1.5rem;
 	}
 }
