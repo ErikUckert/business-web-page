@@ -4,7 +4,7 @@ html {
 	overflow-x: hidden;
     -ms-text-size-adjust: 100%;
 	-webkit-text-size-adjust: 100%;
-    font-family: Lato, sans-serif;
+    font-family: 'Roboto', sans-serif;
 	font-size: 15px;
 	line-height: 1.5;
 	width: 100%
@@ -49,27 +49,12 @@ img {
 	width: 100%
 }
 
-.hr {
-	box-sizing: content-box;
-	height: 0;
-	overflow: visible
-}
-
 hr {
-	box-sizing: content-box;
-	overflow: visible;
-	width: 30px;
-	height: 3px;
-	background: #fff;
-	border: 0
-}
-
-.gradient-hr {
 	border: 0;
 	height: 1px;
 	width: 60%;
 	background: #333;
-	background-image: linear-gradient(to right, #ccc, #333, #ccc)
+	background-image: linear-gradient(to right, #fbf5f3, #8daa9d, #fbf5f3)
 }
 
 .logo{
@@ -157,7 +142,6 @@ h3,
 h4,
 h5,
 h6 {
-	font-family: "Segoe UI", Arial, sans-serif;
 	font-weight: 400;
 	margin: 10px 0
 }
