@@ -100,19 +100,21 @@ hr {
 	padding: 0.25rem 0.5rem;
 	margin: 0.25rem;
 	cursor: pointer;
-	width: 180px;
+	width: 220px;
+	display: inline-block;
+	text-align: center;
   }
+
+.info-button i {
+	width: 2rem;
+	margin: 0 0.5rem;
+}
   
 /* Darker background on mouse-over */
 .info-button:hover {
 background-color: #a50e27!important;
 }
 
-.fa-envelope,
-.fa-balance-scale-right,
-.fa-feather-alt{
-	margin-right: 10px;
-}
 .colors-morning-blue:hover,
 .colors-morning-blue {
 	color: #fbf5f3!important;
@@ -591,7 +593,7 @@ span.spamschutz {
 		border-radius: 0.25rem;
 		background: #c8102e!important;
 		color: white;
-		font-size: 1.8rem;
+		font-size: 1.7rem;
 		line-height: 2;
 		white-space: nowrap;
 		text-decoration: none;
@@ -599,5 +601,13 @@ span.spamschutz {
 		margin: 0.25rem;
 		cursor: pointer;
 		width: 280px;
+		display: inline-block;
+		text-align: left;
+		align-items: flex-start;
 	  }
+	
+	.info-button i {
+		width: 2rem;
+		margin: 0 1rem;
+	}
 }
