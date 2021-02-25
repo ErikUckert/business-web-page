@@ -27,6 +27,10 @@ nav {
 	display: block
 }
 
+#navbar {
+	transition: ease 1s;
+}
+
 [hidden] {
 	display: none
 }
@@ -71,6 +75,10 @@ hr {
 
 .credits {
 	font-size: 0.8rem;
+}
+
+.fa-map-marker-alt {
+	margin-right: 1rem;
 }
 
 .info-button {
@@ -497,18 +505,24 @@ span.spamschutz {
 	display:none;
   }
 
-  .contact-links {
+.contact-links {
 	text-decoration: none;
 	padding:0 0 0 0;
 	text-transform: none;
   }
 
-  .marked-links {
+ .marked-links {
 	text-decoration: none;
 	padding:0 0 0 0;
 	text-transform: none;
 	color: gray;
+	opacity: 0.6;
+	transition: 0.3s;
   }
+
+.marked-links:hover {
+	opacity: 1
+}
 
 @-webkit-keyframes slide-in-bottom {
 	0% {
