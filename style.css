@@ -157,6 +157,10 @@ a {
 	color: inherit
 }
 
+.li-margin {
+	margin-bottom: 2em;
+}
+
 
 /* Template Classes from https://www.w3schools.com/w3css/default.asp */
 .w3-bottom,
